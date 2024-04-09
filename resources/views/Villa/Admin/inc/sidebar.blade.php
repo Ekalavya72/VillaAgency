@@ -73,7 +73,7 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item active">
-              <a href="{{route ('files.index')}}" class="menu-link">
+              <a href="{{route('files.index')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
@@ -81,9 +81,9 @@
 
            
 
-            <li class="menu-header small text-uppercase">
+            <!-- <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Pages</span>
-            </li>
+            </li> -->
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
@@ -107,7 +107,7 @@
 
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <i class=' menu-icon tf-icons bx bxs-image'></i>
                 <div data-i18n="Account Settings">Carousel</div>
               </a>
               <ul class="menu-sub">
@@ -129,7 +129,7 @@
           
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <i class=' menu-icon tf-icons bx bx-home'></i>
                 <div data-i18n="Account Settings">About</div>
               </a>
               <ul class="menu-sub">
@@ -150,7 +150,7 @@
             
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <i class='menu-icon tf-icons bx bxs-file-image'></i>
                 <div data-i18n="Account Settings">Facts</div>
               </a>
               <ul class="menu-sub">
@@ -170,7 +170,7 @@
 
              <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <i class='menu-icon tf-icons bx bxs-factory'></i>
                 <div data-i18n="Account Settings">Property</div>
               </a>
               <ul class="menu-sub">
@@ -190,10 +190,30 @@
          
        
 
-             <li class="menu-item">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <i class="menu-icon tf-icons fa-solid fa-business-time"></i>
                 <div data-i18n="Account Settings">Best deals</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="{{route ('best_deals.create')}}" class="menu-link">
+                    <div data-i18n="Account">create</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{route ('best_deals.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">index</div>
+                  </a>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class=" menu-icon tf-icons fa-solid fa-gears"></i>
+                <div data-i18n="Account Settings">Profile Setting</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
