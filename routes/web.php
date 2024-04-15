@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [FrontendController::class, 'index']);
+Route::get('/properties', [FrontendController::class, 'properties'])->name('properties');
 
 
 
@@ -15,9 +16,7 @@ Route::get('/property-details', function () {
     return view('Villa.property-details');
 });
 
-Route::get('/properties', function () {
-    return view('Villa.properties');
-});
+
 
 Route::get('/contact', function () {
     return view('Villa.contact');
