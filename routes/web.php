@@ -1,15 +1,15 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/', [FrontendController::class, 'index']);
 
-Route::get('/', function () {
-    return view('Villa.index');
-});
+
 
 Route::get('/property-details', function () {
     return view('Villa.property-details');
