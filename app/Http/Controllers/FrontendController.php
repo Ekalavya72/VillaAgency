@@ -19,6 +19,11 @@ class FrontendController extends Controller
         $properties = Property::query()->paginate(9);
         return view('Villa.properties',compact('properties'));
     }
+    public function propertiesdetails($id){
+        $property = Property::query()->where('id',$id)->first();
+        return view('Villa.property-details',compact('property'));
+
+    }
 
    
 }

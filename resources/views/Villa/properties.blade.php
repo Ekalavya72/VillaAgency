@@ -38,7 +38,7 @@
         
           <div class="item">
             
-            <a href="property-details"><img src="{{asset ('uploads/'.$property->img)}}" alt=""></a>
+            <a href="{{ route('property-details',$property->id)}}"><img src="{{asset ('uploads/'.$property->img)}}" alt=""></a>
             <span class="category">{{$property->type}}</span>
             <h6>${{$property->price}}</h6>
             <h4><a href="property-details">{{$property->address}}</a></h4>
@@ -50,7 +50,7 @@
               <li>Parking: <span>{{$property->parking}}</span></li>
             </ul>
             <div class="main-button">
-              <a href="property-details">Schedule a visit</a>
+            <a href="{{ route('property-details',$property->id)}}">Schedule a visit</a>
             </div>
               
            

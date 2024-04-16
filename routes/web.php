@@ -9,12 +9,11 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/properties', [FrontendController::class, 'properties'])->name('properties');
+Route::get('/property-details/{id}', [FrontendController::class, 'propertiesdetails'])->name('property-details');
 
 
 
-Route::get('/property-details', function () {
-    return view('Villa.property-details');
-});
+
 
 
 
