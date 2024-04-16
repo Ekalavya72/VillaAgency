@@ -213,7 +213,7 @@
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
               <i class=" menu-icon tf-icons fa-solid fa-gears"></i>
-                <div data-i18n="Account Settings">Profile Setting</div>
+                <div data-i18n="Account Settings">Site Config</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">

@@ -36,9 +36,9 @@
                                 <th>Area</th>
                                 <th>Floor</th>
                                 <th>Parking</th>
-                                <th>Description</th>
                                 <th>Image</th>
                                 <th>Actions</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody class="table-border-bottom-2">
@@ -53,7 +53,6 @@
                                 <td>{{ $property->area }}</td>
                                 <td>{{ $property->floor }}</td>
                                 <td>{{ $property->parking }}</td>
-                                <td>{{ $property->description }}</td>
                                 <td>
                                     <a href="{{ asset('uploads/' . $property->img) }}" target="_blank">
                                         <img src="{{ asset('uploads/' . $property->img) }}" alt="img" width="50px" height="50px">
@@ -89,6 +88,7 @@
                                         </div>
                                     </div>
                                 </td>
+                                <td>{{ $property->description }}</td>
                             </tr>
                             @endforeach
                         </tbody>
