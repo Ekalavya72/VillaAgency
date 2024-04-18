@@ -18,15 +18,14 @@
         <!-- Content -->
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Horizontal
-                Layouts</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Fact/</span>Edit</h4>
             <!-- Basic Layout & Basic with Icons -->
             <!-- Basic with Icons -->
             <div class="col-xxl">
                 <div class="card mb-4">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                        <h5 class="mb-0">Basic with Icons</h5>
-                        <small class="text-muted float-end">Merged input group</small>
+                        <h5 class="mb-0">Edit Fact</h5>
+                        <!-- <small class="text-muted float-end">Merged input group</small> -->
                     </div>
                     <div class="card-body">
                         <form method="POST" enctype="multipart/form-data"
@@ -60,7 +59,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">sub_title</label>
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Sub_Title</label>
                                 <div class="col-sm-10">
                                     <div class="input-group input-group-merge">
                                         <span id="basic-icon-default-sub_title" class="input-group-text">
@@ -80,9 +79,15 @@
                                 </div>
                             </div>
                            
+                           
                         </form>
                         
+                        
                     </div>
+                    
+                </div>
+                <div class="col-sm-10">
+                            <a href="{{ route('facts.index') }}" class="btn btn-primary">Back to List</a>
                 </div>
             </div>
         </div>

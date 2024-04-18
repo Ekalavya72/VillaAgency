@@ -24,13 +24,12 @@
         <!-- Content -->
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Horizontal
-                Layouts</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">About/</span>Index</h4>
 
             <!-- Basic with Icons -->
             <div class="col-xxl">
                 <div class="card">
-                    <h5 class="card-header">Table Basic</h5>
+                    <h5 class="card-header">About Table</h5>
 
                     <div class="table-responsive text-nowrap">
                         <table class="table">
@@ -73,7 +72,7 @@
                                             <div class="modal-dialog        ">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Delete About Us</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
@@ -85,8 +84,8 @@
                                                             @csrf
                                                             @method('delete')
 
-                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                            <button type="submit" class="btn btn-danger"> Delete </button>
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                                            <button type="submit" class="btn btn-danger"> Yes </button>
                                                         </form>
                                                     </div>
                                                 </div>

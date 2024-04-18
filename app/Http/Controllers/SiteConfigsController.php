@@ -12,7 +12,9 @@ class SiteConfigsController extends Controller
      */
     public function index()
     {
-        //
+        $siteconfigs = new Site_configs;
+        $siteconfigs = $siteconfigs->paginate(5);
+        return view ('Villa.Admin.siteconfig.index', compact('siteconfigs'));
     }
 
     /**
@@ -20,7 +22,7 @@ class SiteConfigsController extends Controller
      */
     public function create()
     {
-        //
+        return view ('Villa.Admin.siteconfig.create');
     }
 
     /**
@@ -28,38 +30,76 @@ class SiteConfigsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $siteconfigs = new Site_configs;
+        $request->validate(
+            [
+               
+                'site_key' => 'required',
+                
+                'site_value' => 'required',
+            ]
+        );
+        
+      
+        $siteconfigs->site_key = $request->site_key;
+        $siteconfigs->site_value = $request->site_value;
+        $siteconfigs->save();
+
+        return redirect('/admin/siteconfig/create')->with('message', 'Succesfully stored');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Site_configs $site_configs)
+    public function show($id)
     {
-        //
+        $siteconfig = new Site_configs;
+        $siteconfig = $siteconfig->where('id', $id)->first();
+        return view('Villa.Admin.siteconfig.show', compact('siteconfig'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Site_configs $site_configs)
+    public function edit($id)
     {
-        //
+        $siteconfig = new Site_configs;
+        $siteconfig = $siteconfig->where('id', $id)->first();
+        return view('Villa.Admin.siteconfig.edit', compact('siteconfig'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Site_configs $site_configs)
+    public function update(Request $request, $id)
     {
-        //
+        $siteconfigs = new Site_configs;
+        $siteconfigs = $siteconfigs->where('id', $id)->first();
+        $request->validate(
+            [
+               
+                'site_key' => 'required',
+                
+                'site_value' => 'required',
+            ]
+        );
+        
+      
+        $siteconfigs->site_key = $request->site_key;
+        $siteconfigs->site_value = $request->site_value;
+        $siteconfigs->save();
+
+        return redirect('/admin/siteconfig')->with('message', 'Succesfully updated');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Site_configs $site_configs)
+    public function destroy($id)
     {
-        //
+        $siteconfig = new Site_configs;
+        $siteconfig = $siteconfig->where('id', $id)->first();
+        $siteconfig->delete();
+        return redirect('/admin/siteconfig')->with('message', 'Your data has been deleted');
     }
 }

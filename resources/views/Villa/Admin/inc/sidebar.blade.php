@@ -81,9 +81,7 @@
 
            
 
-            <!-- <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Pages</span>
-            </li> -->
+           
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
@@ -91,15 +89,16 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="{{route ('files.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                  <a href="{{route ('files.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Index</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('files.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
+                  <a href="{{route ('files.create')}}" class="menu-link">
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
+                
                 
               </ul>
             </li>
@@ -111,14 +110,15 @@
                 <div data-i18n="Account Settings">Carousel</div>
               </a>
               <ul class="menu-sub">
+                
                 <li class="menu-item">
-                  <a href="{{route ('carousels.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                  <a href="{{route ('carousels.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Index</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('carousels.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
+                  <a href="{{route ('carousels.create')}}" class="menu-link">
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
                 
@@ -133,14 +133,15 @@
                 <div data-i18n="Account Settings">About</div>
               </a>
               <ul class="menu-sub">
+                
                 <li class="menu-item">
-                  <a href="{{route ('abouts.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                  <a href="{{route ('abouts.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Index</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('abouts.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
+                  <a href="{{route ('abouts.create')}}" class="menu-link">
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
                 
@@ -154,16 +155,17 @@
                 <div data-i18n="Account Settings">Facts</div>
               </a>
               <ul class="menu-sub">
+              <li class="menu-item">
+                  <a href="{{route ('facts.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Index</div>
+                  </a>
+                </li>
                 <li class="menu-item">
                   <a href="{{route ('facts.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="{{route ('facts.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
-                  </a>
-                </li>
+                
                 
               </ul>
             </li>
@@ -174,14 +176,15 @@
                 <div data-i18n="Account Settings">Property</div>
               </a>
               <ul class="menu-sub">
+                
                 <li class="menu-item">
-                  <a href="{{route ('properties.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                  <a href="{{route ('properties.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Index</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('properties.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
+                  <a href="{{route ('properties.create')}}" class="menu-link">
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
                 
@@ -196,14 +199,15 @@
                 <div data-i18n="Account Settings">Best deals</div>
               </a>
               <ul class="menu-sub">
+                
                 <li class="menu-item">
-                  <a href="{{route ('best_deals.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                  <a href="{{route ('best_deals.index')}}" class="menu-link">
+                    <div data-i18n="Notifications">Index</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('best_deals.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
+                  <a href="{{route ('best_deals.create')}}" class="menu-link">
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
                 
@@ -217,15 +221,16 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="{{route ('best_deals.create')}}" class="menu-link">
-                    <div data-i18n="Account">create</div>
+                  <a href="{{route ('siteconfig.index')}}" class="menu-link">
+                    <div data-i18n="Account">Index</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="{{route ('best_deals.index')}}" class="menu-link">
-                    <div data-i18n="Notifications">index</div>
+                  <a href="{{route ('siteconfig.create')}}" class="menu-link">
+                    <div data-i18n="Account">Create</div>
                   </a>
                 </li>
+                
                 
               </ul>
             </li>

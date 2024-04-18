@@ -13,14 +13,14 @@
 
 <div class="content-wrapper">
     <div class="container-xxl flex-grow-1 container-p-y ">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Best deal details</span></h4>
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Best Deals/</span>Details</h4>
 
         <div class="bg-light p-4 rounded">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card mb-4 h-100 shadow-sm ">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Best deal Information</h5>
+                            <h5 class="card-title text-primary">Best Deals Details</h5>
                             <div class="mb-3">
                                 <strong>Type:</strong> {{ $best_deal->type }}
                             </div>

@@ -18,7 +18,7 @@
 
 <div class="content-wrapper">
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Property Management/</span> Properties List</h4>
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Property/</span>Index</h4>
         <!-- Property List -->
         <div class="col-xxl">
             <div class="card">
@@ -74,14 +74,14 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    Are you sure you want to delete this property?
+                                                    Are you sure?
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
                                                     <form action="{{ route('properties.destroy', $property->id) }}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                                        <button type="submit" class="btn btn-danger">Yes</button>
                                                     </form>
                                                 </div>
                                             </div>
