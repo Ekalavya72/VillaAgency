@@ -45,8 +45,16 @@
       <div class="row">
         <div class="col-lg-8 col-md-8">
           <ul class="info">
-            <li><i class="fa fa-envelope"></i> info@company.com</li>
-            <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
+            @foreach ($siteconfig as $config )
+            @if ($config->site_key=="email")
+            <li><i class="fa fa-envelope"></i>{{$config->site_value}}</li> 
+            @endif
+            @if ($config->site_key=="address")
+            <li><i class="fa fa-map"></i>{{$config->site_value}}</li> 
+            @endif
+            @endforeach
+            
+            <!-- <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li> -->
           </ul>
         </div>
         <div class="col-lg-4 col-md-4">

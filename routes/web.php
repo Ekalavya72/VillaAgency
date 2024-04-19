@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
@@ -7,9 +8,11 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/properties', [FrontendController::class, 'properties'])->name('properties');
 Route::get('/property-details/{id}', [FrontendController::class, 'propertiesdetails'])->name('property-details');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
 
 
@@ -17,9 +20,8 @@ Route::get('/property-details/{id}', [FrontendController::class, 'propertiesdeta
 
 
 
-Route::get('/contact', function () {
-    return view('Villa.contact');
-});
+
+
 Route::get('/schedule-visit', function () {
     return view('Villa.schedule-visit');
 });

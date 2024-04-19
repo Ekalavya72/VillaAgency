@@ -14,9 +14,6 @@ return new class extends Migration
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('company address');
-            $table->string('company mail');
-            $table->string('company googlemaps');
             $table->longText('description');
             $table->string('img');
 
