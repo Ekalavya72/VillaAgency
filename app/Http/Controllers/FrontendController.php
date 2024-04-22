@@ -32,7 +32,15 @@ class FrontendController extends Controller
     public function contact(){
         $siteconfig = Site_configs::all();
         return view('Villa.contact',compact('siteconfig'));
+    }public function schedule()
+    {
+        $siteconfig = Site_configs::all();
+        return view('Villa.schedule-visit',compact('siteconfig'));
+
     }
+    
+
+
 
    
 }
