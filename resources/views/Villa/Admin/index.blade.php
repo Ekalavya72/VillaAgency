@@ -43,7 +43,7 @@
                         <tbody>
                             @foreach ($schedule as $visit)
                             <tr>
-                                <td>{{ $visit->id }}</td>
+                                <td>{{ $loop->iteration }}</td>
                                 <td>{{ $visit->FirstName }}</td>
                                 <td>{{ $visit->LastName }}</td>
                                 <td>{{ $visit->Phone }}</td>
@@ -61,6 +61,7 @@
                             </div>
                         </div>
                     </div>
+                    {{$schedule->links()}}
                 </div>
             </div>
         </div>

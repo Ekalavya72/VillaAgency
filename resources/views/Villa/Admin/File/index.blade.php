@@ -51,7 +51,7 @@
 
                                 <tr>
 
-                                    <td><i class=" fa-lg text-danger me-3"></i> {{ $loop->iteration }}
+                                    <td><i class=" fa-lg text-danger me-3"></i> {{ $loop->iteration }}</td>
                                     <td><i class=" fa-lg text-danger me-3"></i> {{ $file->title }}
                                     </td>
 
